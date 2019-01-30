@@ -9,7 +9,7 @@ Docker (https://www.docker.com/) + docker-compose (https://docs.docker.com/compo
 
 ## Como instalar?
 
-- Clone a aplicação para seu diretório: git clone https://github.com/adamaraujodelima/convforn.git
+- Clone a aplicação para seu diretório: git clone https://github.com/adamaraujodelima/laravel-blog-docker-redis.git
 - Acesse a pasta criada e execute  o arquivo run.sh via terminal: ./run.sh
 - Aguarde a inicialização do container Docker e a instalação e configuração da aplicação em Laravel
 - Após finalizado, acesse http://localhost para ver a aplicação rodando.
