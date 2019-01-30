@@ -1,4 +1,4 @@
-# API - CONVFORN - Integração de empresas e fornecedores
+# Laravel Blog - Blog Simples com Docker + Laravel + Redis + Mysql
 
 ## Escopo
 Aplicação rodando em container Docker em Laravel Framework, cache via Redis, Mysql e MailDev para testar e-mails com objetivo de demonstrar exemplo de Blog Simples em Laravel. 
