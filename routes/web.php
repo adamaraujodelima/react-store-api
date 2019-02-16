@@ -19,7 +19,7 @@ Route::group([
     'prefix' => 'admin'
 ], function(){
     Route::middleware('verified')->get('/', 'Admin\HomeController@index')->name('home');
-    Route::middleware('verified')->get('/settings', 'SettingsController@index')->name('settings');
+    Route::middleware('verified')->get('/settings', 'SettingsController@index')->name('admin-settings');
 
     Route::group([
         'prefix' => 'posts'

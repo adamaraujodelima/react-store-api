@@ -59,6 +59,9 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('admin-users-list') }}">{{ __('Usuários') }}</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('admin-settings') }}">{{ __('Configurações') }}</a>
+                            </li>
                             @endif
                             @if (Auth::user()->profile == 2)                            
                             <li class="nav-item">
