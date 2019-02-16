@@ -18,12 +18,19 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::group([
-    'prefix' => 'company'
+    'prefix' => 'customer'
 ], function(){    
-    Route::middleware('auth:api')->post('register','Api\Company\RegisterController@create');
-    Route::middleware('auth:api')->put('edit','Api\Company\EditController@update');
-    Route::middleware('auth:api')->get('info','Api\Company\InfoController@index');
-    Route::middleware('auth:api')->get('totalMonthPayments','Api\Company\InfoController@totalMonthPayment');
+    Route::middleware('auth:api')->post('register','Api\UserController@new');
+    Route::middleware('auth:api')->put('edit','Api\UserController@update');
+    Route::middleware('auth:api')->get('info','Api\UserController@index');
+    Route::middleware('auth:api')->get('remove','Api\UserController@delete');
+});
+
+Route::group([
+    'prefix' => 'products'
+], function(){    
+    Route::middleware('auth:api')->get('all','Api\ProductController@index');
+    Route::middleware('auth:api')->get('info/{id}','Api\ProductController@info');
 });
 
 Route::group([

@@ -11,11 +11,13 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
+        
+        /*DB::table('users')->insert([
             'name' => 'Admin Laravel Blog',
             'email' => 'admin.laravel.blog@gmail.com',
             'password' => bcrypt('123456'),
             'email_verified_at' => new \DateTime()
         ]);
+        */
     }
 }
